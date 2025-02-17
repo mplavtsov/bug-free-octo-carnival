@@ -1,11 +1,7 @@
-# .github/workflows/main.yml
-
-on:
-  schedule:
-  - cron: '0 12 * * *' # every day at noon
+on: push
 
 jobs:
-  single-commit:
+  backfill-commits:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -13,4 +9,7 @@ jobs:
     - uses: bcanseco/github-contribution-graph-action@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GIT_EMAIL: mfschwimmer@gmail.com
+        GIT_EMAIL: mschwimmer@gmail.com
+        MAX_DAYS: 22
+        MIN_COMMITS_PER_DAY: 1
+        MAX_COMMITS_PER_DAY: 5
