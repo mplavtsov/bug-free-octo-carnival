@@ -12,6 +12,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIT_EMAIL: mfschwimmer@gmail.com # replace me
-        MAX_DAYS: 1365
+        MAX_DAYS: 666
         MIN_COMMITS_PER_DAY: 1
         MAX_COMMITS_PER_DAY: 5
