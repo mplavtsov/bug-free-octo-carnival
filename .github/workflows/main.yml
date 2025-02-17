@@ -16,3 +16,4 @@ jobs:
         GIT_EMAIL: mfschwimmer@gmail.com
         MIN_COMMITS_PER_DAY: 2
         MAX_COMMITS_PER_DAY: 6
+        INCLUDE_WEEKENDS: false   
